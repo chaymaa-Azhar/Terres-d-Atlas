@@ -1,57 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Agricole marrekech</title>
+  </head>
+  <body>
     <header>
-        <img src="logo.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="#Acceil">Accei</a></li>
-                <li><a href="#produit">produit</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
+      <a href="#accueil" class="logo">
+        <img src="logo.png" alt="Logo Terres d'Atlas" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#Acceil" class="hero">Accei</a></li>
+          <li><a href="#produit" class="produits">produit</a></li>
+          <li><a href="#contact" class="contact">contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-          <h1>les tresors bio de l'Atlas</h1>
-          <p>Huile d'argan, safran et miel, produits avec passion par notre coopérative près de Marrakech.</p>
-          <button href="#contact" class="btn">Recevoir le catalogue</button>
-        </section>
-        <section class="produit">
-            <article class="carte">
-                <h1>Huile d'argan</h1>
-                <p>Pressée à froid, 100% bio et naturelle.</p>
-                <p>prix : 100dh</p>
-            </article>
-            <article class="carte">
-                 <h1>Safran</h1>
-                 <p>Pistils récoltés à la main, intensité exceptionnelle.</p>
-                 <p>prix : 80DH</p>
-            </article>
-            <article>
-                <h1>Miel</h1>
-                <p>Miel de montagne pur, récolté dans l'Atlas.</p>
-                <p >prix : 80 dh</p>
-            </article>
-        </section>
-        <section class="contact">
-           <form action="">
-             <label for="nom">nom</label>
-             <input type="text" required>
-             <label for="email">email</label>
-             <input type="email" required>
-             <textarea name="massage" id="message"> message</textarea>
-            <button type="submit" class="btn">envoyer</button>
-           </form>
-        </section>
+      <section class="hero">
+        <h1>les tresors bio de l'Atlas</h1>
+        <p>
+          Huile d'argan, safran et miel, produits avec passion par notre
+          coopérative près de Marrakech.
+        </p>
+        <a href="#contact" class="btn">Recevoir le catalogue</a>
+      </section>
+      <section class="produit">
+        <div class="grille">
+        <article class="carte">
+          <h1>Huile d'argan</h1>
+          <p>Pressée à froid, 100% bio et naturelle.</p>
+          <p>prix : 100dh</p>
+        </article>
+        <article class="carte">
+          <h1>Safran</h1>
+          <p>Pistils récoltés à la main, intensité exceptionnelle.</p>
+          <p>prix : 80DH</p>
+        </article>
+        <article class="carte">
+          <h1>Miel</h1>
+          <p>Miel de montagne pur, récolté dans l'Atlas.</p>
+          <p>prix : 80 dh</p>
+        </article>
+        </div>
+      </section>
+      <section class="contact">
+        <form action="">
+          <label for="nom">nom</label>
+          <input type="text" id="nom" required />
+          <label for="email">email</label>
+          <input type="email" id="email" required />
+          <textarea name="massage" id="message"> message</textarea>
+          <button type="submit" class="btn">envoyer</button>
+        </form>
+      </section>
     </main>
     <footer>
-     <p>Mentions légales | &copy; 2026 Terres d'Atlas. Tous droits réservés.</p>
+      <p>
+        Mentions légales | &copy; 2026 Terres d'Atlas. Tous droits réservés.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

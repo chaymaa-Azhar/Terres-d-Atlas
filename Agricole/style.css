@@ -1,0 +1,114 @@
+:root{
+    --olive: #556B2F;
+    --Sable: #F4A460;
+    --font : #FDF5E6;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--font);
+    color: rgb(32, 32, 32) ;
+
+}
+a{
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: var(--olive);
+}
+.logo img{
+    height: 50px;
+    border-radius: 40%;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+nav a{
+    color: var(--font);
+}
+
+nav a:hover{
+    color: var(--Sable);
+}
+
+h2{
+    color:var(--olive);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    background-color: var(--Sable);
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+
+}
+.btn:hover{
+ opacity:0.9; /*chafaf */
+}
+
+.hero{
+    text-align: center;
+    padding: 6rem;
+}
+.hero h1{
+    color: var(--olive);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    max-width: 600px;
+    margin: auto
+}
+
+
+.produits {
+  padding: 4rem 2rem;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carte {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.carte:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carte h3 {
+  color: var(--olive);
+  margin-bottom: 0.5rem;
+}
+
+.prix {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--sable);
+}
+
+/* ===== Contact ===== */
