@@ -112,3 +112,43 @@ h2{
 }
 
 /* ===== Contact ===== */
+.contact {
+  padding: 4rem 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  color: var(--olive);
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+
+form .btn {
+  padding: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--olive);
+  color: var(--fond);
+  text-align: center;
+  padding: 1.5rem;
+}
+
